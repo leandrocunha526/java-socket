@@ -21,5 +21,7 @@ jobs:
       with:
         java-version: '11'
         distribution: 'adopt'
-    - name: Build with Ant
+    - name: Build client socket with Ant
       run: ant -noinput -buildfile clientSocket/build.xml
+    - name: Build server socket with Ant
+      run: ant -noinput -buildfile server/build.xml
